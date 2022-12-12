@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="col-12 col-lg-12  d-flex justify-content-center">
+        <div class="cardBox">
+            <div class="card mt-5">
+                <div class="front">
+                    <div class="card-body">
+                        <div class="col-12 col-lg-12 d-flex justify-content-center">
+                            <h1 class="mb-3">{{infoPais.name.common}}</h1>
+                        </div>
+                        <hr>
+                        <div class="col-12 col-lg-12  d-flex justify-content-center align-items-center">
+                            <img class="" [src]="infoPais.flags.png" alt="Bandera no disponible" width="300px">
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="card-body">
+                        <div class="col-12 col-lg-12">
+                            <p class="mt-4"><b>Nombre oficial: </b>{{infoPais.name.official}}</p>
+                        </div>
+                        <hr>
+                        <div class="col-12 col-lg-12">
+                            <p><b>Código de país: </b>{{infoPais.cca2}} / {{infoPais.cca3}}</p>
+                        </div>
+                        <hr>
+                        <div class="col-12 col-lg-12">
+                            <p><b>Capital: </b>{{infoPais.capital}}</p>
+                        </div>
+                        <hr>
+                        <div class="col-12 col-lg-12">
+                            <p><b>Region: </b>{{infoPais.region}}</p>
+                        </div>
+                        <hr>
+                        <div class="col-12 col-lg-12">
+                            <p><b>Sub-region: </b>{{infoPais.subregion}}</p>
+                        </div>
+                        <hr>
+                        <div class="col-12 col-lg-12">
+                            <p><b>Continente: </b>{{infoPais.continents}}</p>
+                        </div>
+                        <hr>
+                        <div class="col-12 col-lg-12">
+                            <p><b>Población: </b>{{infoPais.population | number}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>

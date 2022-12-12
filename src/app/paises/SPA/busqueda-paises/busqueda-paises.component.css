@@ -1,0 +1,12 @@
+.buscador {
+    background-color: rgb(174, 59, 81) !important;
+}
+
+input {
+    width: 500px !important;
+}
+
+label {
+    font-size: large;
+    color: white;
+}

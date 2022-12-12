@@ -1,0 +1,43 @@
+<div class="row buscador">
+    <div class="col-12 col-lg-12 d-flex justify-content-center align-items-center">
+        <form (ngSubmit)="buscarPais(busqueda)" class="d-flex mt-3 mb-3">
+            <label for="inputPaises" class="me-3">Buscar país:</label>
+            <input type="text" id="inputPaises" name="inputPaises" class="form-control" placeholder="España" [(ngModel)]="busqueda">
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-lg-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12">
+                    <!-- <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Bandera</th>
+                                <th>Nombre</th>
+                                <th>Población</th>
+                                <th>Más información</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let pais of paises; let i = index">
+                                <td>{{i + 1}}</td>
+                                <td><img src="{{pais.flags.png}}" alt="Bandera no disponible" width="50px"></td>
+                                <td>{{pais.name.common}}</td>
+                                <td>{{pais.population | number}}</td>
+                                <td><button type="button" class="btn btn-info"><a [routerLink]="['/detalles', pais.cca2]">Info</a></button></td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                    <app-tabla [paisesGuardados]="paisesGuardados"></app-tabla>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

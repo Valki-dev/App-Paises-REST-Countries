@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Bandera</th>
+            <th>Nombre</th>
+            <th>Población</th>
+            <th>Más información</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pais of paisesGuardados; let i = index">
+            <td>{{i + 1}}</td>
+            <td><img src="{{pais.flags.png}}" alt="Bandera no disponible" width="50px"></td>
+            <td>{{pais.name.common}}</td>
+            <td>{{pais.population | number}}</td>
+            <td><button type="button" class="btn btn-info"><a [routerLink]="['/detalles', pais.cca2]">Info</a></button></td>
+        </tr>
+    </tbody>
+</table>
